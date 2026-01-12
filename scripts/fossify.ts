@@ -6,9 +6,9 @@ const removeOptions = { maxRetries: 3, recursive: true };
 const rl = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout,
-});
+}); 
 
-const fossify = async () => {
+const fossify = async () => {    
 	console.log('Removing Premium Apps and Packages...');
 	await fs.rmdir('./ee', removeOptions);
 
